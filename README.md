@@ -8,12 +8,11 @@ Users can easily recreate the project by adding these files to a new Quartus pro
 
 ## ⚙️ Overview
 
-The goal of this project is to build an alarm clock that:
+This repository contains VHDL code for an alarm clock that:
 - Keeps real time (hours and minutes)
 - Allows setting an alarm
 - Triggers an alarm signal when the current time matches the alarm time
 - Displays information on a seven-segment or LCD display
 
 The design uses modular VHDL components for timekeeping, mode selection, display control, and alarm logic.
-
 
