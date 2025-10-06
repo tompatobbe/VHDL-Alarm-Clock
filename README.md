@@ -16,3 +16,5 @@ This repository contains VHDL code for an alarm clock that:
 
 The design uses modular VHDL components for timekeeping, mode selection, display control, and alarm logic.
 
+---
+For full details see pdf
