@@ -18,5 +18,4 @@ The design uses modular VHDL components for timekeeping, mode selection, display
 
 ---
 
-## 📁 Repository Structure
 
