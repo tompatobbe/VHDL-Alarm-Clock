@@ -28,7 +28,7 @@ The design uses modular VHDL components for timekeeping, mode selection, display
 | **clock_1hz.vhd** | Clock divider generating a 1 Hz signal from the board’s main clock. |
 | **clock_counter.vhd** | Implements the hour and minute counters. |
 | **clock_merge.vhd** | Merges display and control signals for output. |
-| **two_digit_display.vhd** | Drives a two-digit 7-segment or LCD display. |
+| **two_digit_display.vhd** | Drives a two-digit 7-segment display. |
 | **BDF_alarm_clock2.bdf** | Quartus Block Diagram file for visual schematic connections. |
 
 ---
