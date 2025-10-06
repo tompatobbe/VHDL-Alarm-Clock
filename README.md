@@ -16,6 +16,4 @@ The goal of this project is to build an alarm clock that:
 
 The design uses modular VHDL components for timekeeping, mode selection, display control, and alarm logic.
 
----
-
 
