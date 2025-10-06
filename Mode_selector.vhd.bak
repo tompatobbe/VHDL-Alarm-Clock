@@ -1,0 +1,53 @@
+Library ieee;
+Use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity alarm_block is
+	port ( 
+		clk_50mhz : in std_logic;
+		mode : in std_logic_vector(6 downto 0);
+		set : in std_logic;
+		alarm_minutes_out : out std_logic_vector(6 downto 0);
+		alarm_hours_out : out std_logic_vector(6 downto 0);
+		alarm_on : out std_logic
+			);
+end alarm_block;
+
+
+architecture Behavioral of alarm_block is 
+
+type state_type is (IDLE, ALARM_ON, SET_ALARM,);
+signal state, next_state : state_type := IDLE;
+signal set_prev : std_logic := '1';
+signal mode_prev : std_logic := '1';
+
+begin 
+	process(clk_50mhz)
+		begin
+			if rising_edge(clk_50mhz) then
+				 state <= next_state;
+				 set_prev <= set;
+				 mode_prev = mode;
+			end if;
+	end process;
+	
+	process(clk)
+		case state is
+		
+			when IDLE =>
+				if (set_prev = '1' and set = '0') then
+					next_state <= ALARM_ON;
+				elsif (mode_prev = '1' and mode = '0') then
+					next_state <= SET_ALARM;
+				end if;
+			
+			when ALARM_ON =>
+				if 
+	
+	
+	
+	
+	
+	end process;
+	
+end Behavioral;
